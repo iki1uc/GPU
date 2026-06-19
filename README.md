@@ -17,9 +17,7 @@ Nur RAW-Material für Tests und Verhalten.
 
 ## Nutzung
 Die Dateien können direkt in Bench-Viewer wie DINOly geladen werden.  
-Jede Station arbeitet unabhängig.  
-Operator und Bench-Plan definieren Testverhalten.
+Jede Station arbeitet unabhängig.
 
 ## Status
-U4X ist ein reiner Material-Respo.  
-Keine Funktion, kein System, keine Erweiterung.
+U4X ist ein reiner Material-Respo.
