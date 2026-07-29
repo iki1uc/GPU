@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
 <meta charset="UTF-8">
-<title>U4X · GPU · NC · ULTRA3.0</title>
+<title>U4X · GPU · NC · ULTRA3.0 · ID</title>
 
 <style>
     body { background:#111; color:#eee; font-family: monospace; padding:20px; }
@@ -15,7 +15,11 @@
 
 <h2>U4X · GPU · NC · ULTRA3.0</h2>
 
-<!-- U4X BENCH VIEWER -->
+<div class="block">
+    <h3>ID · CORE</h3>
+    <pre id="idCore"></pre>
+</div>
+
 <div class="block">
     <h3>U4X Input</h3>
     <input id="benchInput" placeholder="type raw input...">
@@ -26,9 +30,8 @@
     <textarea id="benchOutput" rows="6" readonly></textarea>
 </div>
 
-<!-- NC / GPU OUTPUT -->
 <div class="block">
-    <h3>NC · GPU · Output</h3>
+    <h3>GPU / NC Output</h3>
     <textarea id="gpuOutput" rows="12" readonly></textarea>
 </div>
 
@@ -37,11 +40,18 @@
 <script type="module">
 
 // ---------------------------------------------------------
-// IMPORT GPU MODULES
+// IMPORT MODULES
 // ---------------------------------------------------------
+import { ID_CORE } from "./ID.core.js";
 import { NC_VECTOR_NEXT } from "./NC.vector.next.js";
 import { NC_PRUEFUNG_FIX } from "./NC.pruefung.fix.js";
 import { ULTRA_FUSION } from "./FUSION.fix.js";
+
+// ---------------------------------------------------------
+// SHOW ID
+// ---------------------------------------------------------
+document.getElementById("idCore").innerText =
+    JSON.stringify(ID_CORE, null, 2);
 
 // ---------------------------------------------------------
 // U4X BENCH VIEWER
@@ -76,6 +86,7 @@ async function RUN_GPU(){
 
     // 5) OUTPUT
     const out = {
+        id: ID_CORE,
         u4x_input: u4x,
         vector,
         check,
