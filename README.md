@@ -126,6 +126,7 @@ Dies ist der temporäre Name, bis GPU in Pipeline 3 oder 6 finalisiert wird.
 🟦 RAW‑Abbildung
 GPU kann als RAW‑Objekt dargestellt werden:
 
+LICENSE
 Code
 GPU = {
   front: ,
@@ -136,3 +137,15 @@ GPU = {
 }
 Alle Werte stammen aus der Quadranten‑Rotation  
 und der Fusion u4x + xzu4.
+
+Dieses Projekt ist urheberrechtlich geschützt.
+
+Kein Clone. Kein Fork. Keine Nutzung. Keine Weitergabe.
+
+Alle Rechte liegen bei wieimmer iki1uc.
+
+@iki1uc
+Security Policy
+Dieses Projekt akzeptiert keine externen Beiträge, Analysen oder Sicherheitsmeldungen.
+
+Alle Rechte liegen bei iki1uc.
