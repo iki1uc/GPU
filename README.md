@@ -1,174 +1,77 @@
-GPU — U4X RAW‑Quadrantenmodul
-(Final README‑Version, direkt einsetzbar)
+GPU — U4X RAW‑Quadrantenmodul (ART FINAL v4)
+GPU = U4X = neutraler RAW‑Träger, keine Engine, keine Logik.
+Aktiviert durch NC‑System‑Flow. Pipeline 3 / 6 fähig.
 
-GPU / U4X ist ein neutraler RAW‑Quadranten‑Träger, der aus zwei alten GPU‑Repos
-(u4x und xzu4) verschmolzen wurde.
-Die Fusion erzeugt ein einheitliches GPU‑Modul, das als Hardware‑Träger  
-für Bench‑Material, Quadranten‑Rotation und NC‑System‑Flow dient.
-
-GPU / U4X besitzt keine Engine, keine Logik, keine Interpretation.
-Es ist ein reiner RAW‑Träger, der durch das NC‑System aktiviert wird.
+🟦 Status: ART FINAL v4 (Vol.4)
+Vol	Name	Zeit	Bewertung	Lehre
+ori.html	UR-ALT	ur alt	Wertung=1 / RAM=1 / GPU=1 × Wahrheit=20% × Beitrag=10% = 0.02	Ursprung, noch kein Quadrant, nur Idee
+vol.1.html	Vol.1	last week-8min	Wertung=3 / RAM=3 / GPU=1 × 60% × 50% = 0.30	Erste Fusion, aber noch engine-lastig, nicht neutral
+vol.2.html	Vol.2	now-2	Wertung=5 / RAM=3 / GPU=1 × 70% × 70% = 0.82	Besser sortierbar, aber noch zu viel Logik
+vol.3.html	Vol.3 (c3a715f)	now	Wertung=7 / RAM=9 / GPU=1 × 85% × 80% = 0.53	Fast neutral, Pipeline 3/6 erkannt, aber noch kein ART
+index.html	Vol.4 ART	now FINAL	Wertung=9 / RAM=9 / GPU=1 × Wahrheit=95% × Beitrag=95% = 0.90	ART = FRONT DEPTH FLOW CORE als Kunst, 180° + 4×90°, RAW pur
+Formel: Bewertung = Wertung / RAM / GPU × Wahrheit × Beitrag
+Fixpunkt: f(f(x))=f(x) — ART bleibt ART
 
 🟦 Struktur
-GPU / U4X enthält folgende RAW‑Materialien:
+/items/
+  station-01.bench.item  → FRONT  Y→  Surface / Viewport
+  station-02.bench.item  → DEPTH  →Z  Volume / Memory
+  u4x-bench-plan.item    → FLOW   X↓  Pipeline / Sequence
+  u4x-operator.item      → CORE   ⊕   Operator / Anchor
+t/ T/      → deep structure (Hardware-Erklärung, kein echter Ordner)
+cache/     → CACHE 2×RAM
+ID.core.js → ID 0x90×90×4
+security.js → LICENSE-CLOSED
+FUSION.fix → u4x + xzu4 = U4X
+NC.vector.next / NC.pruefung.fix → NC-System Flow
+magma.html → MAGMA Schicht (unter LOGIK)
+Jede Station unabhängig, alle GPU-kompatibel.
 
-Code
-/items
-- station-01.bench.item
-- station-02.bench.item
-- u4x-bench-plan.item
-- u4x-operator.item
-Diese Items bilden die Grundstruktur für GPU‑Quadranten:
+🟦 Fusion
+u4x  = neutral, leer, kompatibel
+xzu4 = unfertig, unklar, nicht kompatibel
+u4x + xzu4 = U4X = GPU = U4X (eindeutig, registriert, pipelinefähig, RAW-kompatibel, NC-kompatibel)
+🟦 Modi (neu: ART)
+180°-Modus: Zweiteilung FRONT/CORE vs DEPTH/FLOW → schneller RAW-Bench-Test
+4×90°-Modus: Vierfach-Quadrantenrotation → NC-System-Flow + Pipeline-Integration
+ART-Modus (neu Vol.4): Alle 4 Quadranten gleichzeitig als Kunst — kein Zweck, nur Sein. FRONT ∧ DEPTH ∧ FLOW ∧ CORE
+🟦 Pipeline-Integration
+Pipeline 3: Flow-Pipeline → ideal für Quadrantenrotation
+Pipeline 6: Hardware-Pipeline → ideal für Material-Träger
+Beide 2–3× getauscht, registriert, neutralisiert, fail-safe → Finalisierung ohne Risiko
+🟦 Vol-Chronik lernen
+ori.html     → 1 Zelle, 0 Rotation, 0 Items → UR-ALT = BIOS=0
+vol.1.html   → 4 Zellen, 1 Rotation → MAAS=1
+vol.2.html   → 9 Zellen, 2 Rotationen → MAASIGKEITEN
+vol.3.html   → 27 Zellen, 3 Rotationen → MAASLICHKEITEN
+index.html   → 81 Zellen, 4×90° = 360° → ALLES (enthält alles, FRACHE/ELENT getrennt)
+Richtig wurzeln: ALLES enthält alle vorherigen Vol, aber FRACHE/ELENT getrennt.
 
-FRONT
-
-DEPTH
-
-FLOW
-
-CORE
-
-Jede Station arbeitet unabhängig, aber alle sind GPU‑kompatibel.
-
-🟦 Zweck
-GPU / U4X dient als:
-
-RAW‑Bench‑Träger
-
-Quadranten‑Materialbehälter
-
-GPU‑Vorstufe für Pipeline‑Integration
-
-neutraler Hardware‑Slot für NC‑System‑Flow
-
-Ersatz für die alten GPU‑Repos (u4x, xzu4)
-
-GPU / U4X ist sortierbar, neutral, fail‑safe  
-und kann in Pipeline 3 oder Pipeline 6 eingesetzt werden.
-
-🟦 Fusion (u4x + xzu4)
-Die beiden alten GPU‑Repos:
-
-u4x (neutral, leer, kompatibel)
-
-xzu4 (unfertig, unklar, nicht kompatibel)
-
-wurden zu einem einzigen GPU‑Modul verschmolzen:
-
-Code
-GPU = U4X
-U4X = GPU
-Damit ist GPU:
-
-eindeutig
-
-registriert
-
-pipelinefähig
-
-RAW‑kompatibel
-
-NC‑kompatibel
-
-bereit für Finalisierung
-
-🟦 Modi
-GPU / U4X unterstützt zwei Rotationsmodi:
-
-180°‑Modus
-Zweiteilung der Quadranten
-→ geeignet für schnelle RAW‑Bench‑Tests
-
-4×90°‑Modus
-Vierfach‑Quadrantenrotation
-→ geeignet für NC‑System‑Flow und Pipeline‑Integration
-
-Beide Modi sind neutral, fail‑safe, RAW‑kompatibel.
-
-🟦 Pipeline‑Integration
-GPU / U4X kann in zwei registrierte Pipelines eingesetzt werden:
-
-Pipeline 3
-Flow‑Pipeline
-→ ideal für GPU‑Quadrantenrotation
-
-Pipeline 6
-Hardware‑Pipeline
-→ ideal für GPU‑Material‑Träger
-
-Beide Pipelines wurden 2–3× getauscht,
-sind registriert, neutralisiert, fail‑safe  
-und erlauben GPU‑Finalisierung ohne System‑Risiko.
-
-🟦 Nutzung
-GPU‑Items können direkt in Bench‑Viewer wie DINOly geladen werden.
-Jede Station arbeitet unabhängig, aber alle sind GPU‑kompatibel.
-
-🟦 Status
-GPU / U4X ist:
-
-gültig
-
-gesetzt
-
-neutral
-
-RAW‑fähig
-
-pipelinefähig
-
-fusioniert
-
-bereit für Finalisierung
-
-Dies ist der temporäre Name, bis GPU in Pipeline 3 oder 6 finalisiert wird.
-
-🟦 RAW‑Abbildung
-GPU kann als RAW‑Objekt dargestellt werden:
-
-LICENSE
-Code
+🟦 RAW-Abbildung
 GPU = {
-  front: ,
-  depth: ,
-  flow: ,
-  core: ,
-  items: [...]
+  front: "station-01.bench.item",
+  depth: "station-02.bench.item", 
+  flow: "u4x-bench-plan.item",
+  core: "u4x-operator.item",
+  items: [4],
+  rotation: "4×90° = 360° = ART",
+  fusion: "u4x + xzu4 = U4X",
+  pipeline: [3,6],
+  vol: 4,
+  ori: "ur alt",
+  bewertung: "0.90 ART FINAL"
 }
-Alle Werte stammen aus der Quadranten‑Rotation  
-und der Fusion u4x + xzu4.
+🟦 Nutzung
+Items direkt in Bench-Viewer wie DINOly laden. Jede Station unabhängig.
 
-Dieses Projekt ist urheberrechtlich geschützt.
+iki1uc.github.io/GPU/ → lädt index.html (Vol.4 ART)
+🟦 Global IDs (Wurzel-Q-729)
+L0-C40-R0 = 360 = SCSI INNEN
+L1 = 1089 = RAID MITTE Kleber 40%
+L2 = 1818 = GPU SLI AUSSEN = ICH jetzt
+🟦 License
+NO-USE LICENSE (NUL) — Copyright 2026 iki1uc
+Kein Clone, kein Fork, keine Nutzung ohne Genehmigung.
+Security: keine externen Beiträge.
 
-Kein Clone. Kein Fork. Keine Nutzung. Keine Weitergabe.
-
-Alle Rechte liegen bei wieimmer iki1uc.
-
-@iki1uc
-Security Policy
-Dieses Projekt akzeptiert keine externen Beiträge, Analysen oder Sicherheitsmeldungen.
-
-Alle Rechte liegen bei iki1uc.
-
-NO-USE LICENSE (NUL)
-Copyright (c) 2026 iki1uc
-
-Alle Rechte vorbehalten.
-
-Es ist NICHT gestattet:
-- den Code zu kopieren
-- den Code zu klonen
-- den Code zu forken
-- den Code zu verbreiten
-- den Code zu verändern
-- den Code zu nutzen
-- den Code in andere Projekte zu integrieren
-- den Code kommerziell zu verwenden
-- den Code privat zu verwenden
-- den Code zu speichern oder zu archivieren
-- den Code zu analysieren oder zu dekompilieren
-
-Nur der Urheber (iki1uc) hat Nutzungsrechte.
-
-Jede Nutzung ohne ausdrückliche schriftliche Genehmigung ist verboten.
-
+Vol.4 ART = bewertet, gelernt, finalisiert. ori=0, vol1=1, vol2=2, vol3=3, index=ALLES.
